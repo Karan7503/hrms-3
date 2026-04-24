@@ -1,0 +1,439 @@
+:root {
+
+  /* SOFT HANDSONTABLE STYLE  109 40 217*/
+
+  /* softer violet-700 */
+  /*slightly darker */
+
+  /* --primary: 121, 179, 176;       
+--primary-hover: 91 33 182;    */
+
+
+  /* MODERN UI VARIABLES - Fathom Aesthetic */
+  --primary: 89, 70, 242;
+  /* Strong Indigo/Purple */
+  --primary-hover: 76, 59, 206;
+
+
+  /* background should be WHITE */
+  --bg-main: 255 255 255;
+
+  /* cards slightly separated */
+  --bg-card: 255 255 255;
+
+  /* text */
+  --text-main: 17 24 39;
+  /* gray-900 */
+  --text-muted: 107 114 128;
+  /* gray-500 */
+
+  /* borders subtle */
+  --border-color: 229 231 235;
+  /* gray-200 */
+
+
+  /* status */
+  --success-strong: 34 197 94;
+  --success-soft: 220 252 231;
+
+  --danger-strong: 239 68 68;
+  --danger-soft: 254 226 226;
+
+
+}
+
+body {
+  background: rgb(var(--bg-main));
+  color: rgb(var(--text-main));
+}
+
+[data-theme="softBlue"] {
+
+  --primary: 59 130 246;
+  --primary-hover: 37 99 235;
+
+  --bg-main: 246 249 255;
+  --bg-card: 255 255 255;
+
+  --text-main: 30 41 59;
+  --text-muted: 100 116 139;
+
+  --border-color: 219 234 254;
+
+  --success: 16 185 129;
+  --success-bg: 209 250 229;
+
+  --danger: 239 68 68;
+  --danger-bg: 254 226 226;
+}
+
+
+[data-theme="mintGreen"] {
+
+  --primary: 16 185 129;
+  --primary-hover: 5 150 105;
+
+  --bg-main: 240 253 250;
+  --bg-card: 255 255 255;
+
+  --text-main: 22 28 36;
+  --text-muted: 100 116 139;
+
+  --border-color: 167 243 208;
+
+  --success: 5 150 105;
+  --success-bg: 209 250 229;
+
+  --danger: 220 38 38;
+  --danger-bg: 254 226 226;
+}
+
+
+[data-theme="softLavender"] {
+
+  --primary: 124 131 253;
+  --primary-hover: 99 102 241;
+
+  --bg-main: 245 243 255;
+  --bg-card: 255 255 255;
+
+  --text-main: 30 27 75;
+  --text-muted: 120 113 170;
+
+  --border-color: 221 214 254;
+
+  --success: 34 197 94;
+  --success-bg: 220 252 231;
+
+  --danger: 239 68 68;
+  --danger-bg: 254 226 226;
+}
+
+
+[data-theme="Flame"] {
+
+  --primary: 249 115 22;
+  --primary-hover: 234 88 12;
+
+  --bg-main: 255 247 237;
+  --bg-card: 255 255 255;
+
+  --text-main: 28 25 23;
+  --text-muted: 120 113 108;
+
+  --border-color: 254 215 170;
+
+  --success: 22 163 74;
+  --success-bg: 220 252 231;
+
+  --danger: 220 38 38;
+  --danger-bg: 254 226 226;
+}
+
+[data-theme="dark"] {
+
+  --primary: 99 102 241;
+  --primary-hover: 79 70 229;
+
+  /* neutral dark (no blue tint) */
+  --bg-main: 24 24 27;
+  --bg-card: 39 39 42;
+
+  --text-main: 244 244 245;
+  --text-muted: 161 161 170;
+
+  --border-color: 63 63 70;
+
+  /* status colors (adjusted for dark bg) */
+  --success: 74 222 128;
+  --success-bg: 20 83 45;
+
+  --danger: 248 113 113;
+  --danger-bg: 69 10 10;
+
+  --warning: 251 191 36;
+  --warning-bg: 92 51 23;
+}
+
+
+
+/* ========================
+   CUSTOM UTILITIES
+======================== */
+
+.bg-bgMain {
+  background-color: rgb(var(--bg-main));
+}
+
+.bg-bgCard {
+  background-color: rgb(var(--bg-card));
+}
+
+.text-textMain {
+  color: rgb(var(--text-main));
+}
+
+.border-borderColor {
+  border-color: rgb(var(--border-color));
+}
+
+/* stronger table border */
+/* .border-strong {
+  border-color: rgb(var(--primary) / 0.70);
+} */
+.border-strong {
+  border-color: rgb(var(--border-color)/0.45);
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary));
+}
+
+.hover\:bg-primaryHover:hover {
+  background-color: rgb(var(--primary-hover));
+}
+
+.hover\:text-primary:hover {
+  color: rgb(var(--primary));
+}
+
+.hover\:bg-primarySoft:hover {
+  background-color: rgb(var(--primary) / 0.20);
+}
+
+.bg-primarySoft {
+  background-color: rgb(var(--primary) / 0.12);
+}
+
+/* .bg-primaryGradient {
+
+  background: linear-gradient(
+    135deg,
+    rgb(var(--primary)),
+    rgb(var(--primary-hover))
+  );
+
+} */
+
+.bg-primaryGradient {
+  background: linear-gradient(135deg,
+      rgb(var(--primary)),
+      rgb(var(--primary-hover)));
+}
+
+
+
+/* table styles */
+
+
+/* .bg-tableHeader {
+  background-color: rgb(var(--primary) / 0.08);
+} */
+.bg-tableHeader {
+  background-color: rgb(248 250 252);
+}
+
+/* .bg-rowAlt {
+  background-color: rgb(var(--primary) / 0.05);
+} */
+.bg-rowAlt {
+  background-color: rgb(249 250 251);
+}
+
+
+.text-muted {
+  color: rgb(var(--text-muted));
+}
+
+/* status badges */
+.badge-success {
+  background-color: rgb(var(--success-bg));
+  color: rgb(var(--success));
+}
+
+.badge-danger {
+  background-color: rgb(var(--danger-bg));
+  color: rgb(var(--danger));
+}
+
+/* soft card shadow */
+.card-soft {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+
+.bg-rowAlt {
+  background-color: rgb(var(--row-alt));
+}
+
+/* status utilities */
+
+/* global badge colors */
+
+/* GLOBAL BADGES */
+
+
+
+
+/* PAGE LAYOUT */
+
+.responsive-page {
+  padding: 16px;
+}
+
+@media (min-width:640px) {
+  .responsive-page {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:1024px) {
+  .responsive-page {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1280px) {
+  .responsive-page {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+
+
+/* GRID LAYOUT */
+
+.responsive-grid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width:1024px) {
+  .responsive-grid {
+    grid-template-columns: 1fr 280px;
+  }
+}
+
+
+/* BADGE COLORS */
+
+/* .badge-success {
+  background-color: rgb(var(--success-strong));
+  color: white;
+  border: 1px solid rgb(var(--success-strong));
+}
+
+.badge-danger {
+  background-color: rgb(var(--danger-strong));
+  color: white;
+  border: 1px solid rgb(var(--danger-strong));
+}
+
+.badge-warning{
+  background-color: #f8a202;   
+  color: white; 
+  border: 1px solid #f8a202;   
+}
+
+.badge-neutral{
+  background-color: grey;   
+  color: white;              
+  border: 1px solid gray;   
+}  */
+
+.badge-success {
+  background: rgba(34, 197, 94, 0.10);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: rgb(34, 197, 94);
+}
+
+
+.badge-danger {
+  background: rgba(239, 68, 68, 0.10);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: rgb(239, 68, 68);
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.10);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: rgb(245, 158, 11);
+}
+
+.badge-neutral {
+  background: rgba(120, 120, 120, 0.08);
+  border: 1px solid rgba(120, 120, 120, 0.25);
+  /* color: rgb(var(--textMain)); */
+  color: rgb(239, 68, 68);
+
+}
+
+/* SUMMARY COLORS */
+
+.summary-neutral {
+  background: rgba(120, 120, 120, 0.08);
+  border: 1px solid rgba(120, 120, 120, 0.25);
+  /* color: rgb(var(--textMain)); */
+  color: rgb(239, 68, 68);
+
+}
+
+.summary-success {
+  background: rgba(34, 197, 94, 0.10);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: rgb(34, 197, 94);
+}
+
+.summary-danger {
+  background: rgba(239, 68, 68, 0.10);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: rgb(239, 68, 68);
+}
+
+.summary-warning {
+  background: rgba(245, 158, 11, 0.10);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: rgb(245, 158, 11);
+}
+
+.summary-primary {
+  background: rgba(59, 130, 246, 0.10);
+  border: 1px solid rgba(59, 130, 246, 0.45);
+  color: rgb(59, 130, 246);
+}
+
+.summary-primary {
+  background: rgba(109, 40, 217, 0.08);
+  border: 1px solid rgba(109, 40, 217, 0.20);
+  color: rgb(109, 40, 217);
+}
+
+/* STICKY */
+.bg-Sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(6px);
+  background: rgb(var(--bg-card) / 0.95);
+}
+
+.bg-StickyBreadcrumb {
+  position: sticky;
+  top: 64px;
+  z-index: 40;
+  background: rgb(var(--bg-main));
+}
+
+.bg-StickyTableHeader {
+  position: sticky;
+  top: 120px;
+  /* navbar + breadcrumb height */
+  z-index: 30;
+  background: rgb(248 250 252);
+  border-bottom: 1px solid rgb(var(--border-color));
+}
