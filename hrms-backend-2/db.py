@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 
+
 # connect to local mongodb
 client = MongoClient("mongodb://localhost:27017")
 

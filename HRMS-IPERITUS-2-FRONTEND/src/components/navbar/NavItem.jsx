@@ -11,6 +11,7 @@ function NavItem({ label, path, items }) {
     pb-1
     cursor-pointer
     font-normal
+    tracking-tighter
   `;
 
   const activeStyle = `

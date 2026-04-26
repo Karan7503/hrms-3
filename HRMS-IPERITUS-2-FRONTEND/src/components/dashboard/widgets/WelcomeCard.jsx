@@ -31,50 +31,58 @@ function WelcomeCard({ name = "Karan", role = "admin" }) {
     <div
       className="
  
-  text-white
+    text-white
 
-  rounded-2xl
-  p-6
+      rounded-2xl
+      p-6
 
-  flex items-center justify-between
-
-  shadow-md
-  shadow-[0_0_20px_rgba(var(--primary),0.25)]
+      flex items-center justify-between 
+      shadow-md
+      shadow-[0_0_20px_rgba(var(--primary),0.25)]
 "
     >
 
       {/* LEFT */}
-      <div>
+      <div className="flex flex-col gap-2 ">
 
-        <h2 className="text-2xl font-semibold text-textMain">
+        <h2 className="text-2xl font-bold text-textMain">
           Welcome back
         </h2>
 
-        <p className="text-textMain font-semibold mt-1">
+        <p className="text-textMain font-bold mt-1 text-lg">
           {name}
         </p>
 
-        <p className="text-textMain font-medium text-sm">
+        <p className="text-textMain font-normal text-lg">
           {today}
         </p>
 
         <span
-          className="
-            mt-3
-            inline-block
+        //   className="
+        //     mt-3
+        //     inline-block
 
-            text-textMain
-            text-lg
-            font-bold
+        //     text-textMain
+        //     text-lg
+        //     font-bold
+        //   "
+        // >
+        className="
+          mt-3
+          inline-flex items-center justify-center
 
-             py-1
+          px-4 py-2
+          w-fit
 
-            rounded-full
+          rounded-xl
+          bg-bgCard
+          hover:bg-primarySoft
 
-            bg-white/20
-            border border-white/30
-          "
-        >
+          text-textMain
+          text-sm font-semibold tracking-wide
+
+          shadow-md
+        ">
 
           {role.toUpperCase()}
 
@@ -89,16 +97,16 @@ function WelcomeCard({ name = "Karan", role = "admin" }) {
         <div
           className="
             w-20 h-20
-
+            p-3
             rounded-full
 
-            bg-white/20
+            bg-bgMain
+            text-textMain
 
+            border border-borderColor
             flex items-center justify-center
-
-            border border-white/30
-
             overflow-hidden
+            shadow-md
           "
         >
 
@@ -114,15 +122,20 @@ function WelcomeCard({ name = "Karan", role = "admin" }) {
           className="
             text-xs
 
-            px-3 py-1
+            px-3 py-1.5
 
             rounded-md
 
-            bg-white/20
+            bg-bgMain
+            text-textMain
+
+            border border-borderColor
 
             cursor-pointer
 
-            hover:bg-white/30
+            hover:bg-primarySoft
+
+            transition-colors
           "
         >
 
